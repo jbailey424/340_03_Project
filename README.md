@@ -1,15 +1,16 @@
-# Natural Language Processing Project: How to Write a Better Paper
+# Natural Language Processing Project: Creating an Academic Paper Browsing Tool
 ### Jeffrey Bailey
 ### Data 340-03, Professor Tucker
 
-## Project Description
-In this project, I seek to use tools and methodology learned in the class to analyze trends in the linguistics and writing styles of academic papers. From this analysis I hope to gain insight into how more successful and accomplished researchers write and arrange their papers so that I may better my own academic writing. This will require scraping of published papers and academic journals as well as computational skills to analyze and quantify linguistic trends. After an academic linguistic data set has been collected and processed, I hope to analyze it for significant trends or tendencies, perhaps by comparing a paper's success with the style of its language. At the end, I plan to assemble and present the my findings into a mock seminar or infographic about succesful tips for academic writing. 
+#### Overview:
+For this project, I want to make a model or set of models and tools that can be used to easily parse through dense academic papers and assist with finding interesting papers for the user to read. These are to be packaged into a prototype "app" that runs in python, that demonstrates how the models and created database could be used to develop this paper-browsing tool.
 
-## Steps to be Done
-* A source for data must be found, containing both the text within academic papers and some metric of the paper or author's relative success.
-* Data must be collected or scraped, and then processed and cleaned into a usable database.
-* The processed database must be analyzed statistically, perhaps using techniques or metrics learned later in the NLP course.
-* Findings and trends within the data will be statistically tested and graphically visualized, and then compiled into some presentable form.
+Specifically, I am making a transformer-based summarization model, doc2vec embeddings model, and topic selection model to make a database of scientific articles that includes short summaries, preprocessed versions of article text, vectorized document embeddings, and topic tags. This database will then be used by the set of functions and prototype app to create our paper-browser.
+
+Code and a demo of the prototype app can be seen in the walkthrough notebook. Additional details can be found in the writeup.
+
+#### About the Data
+I am using a very large set of data taken from the huggingface "datasets" library. It contains nearly 200,000 full academic articles from the arXiv repository of math and physics papers. To create my pipeline and prototype app, I used a random subset of 2,500 articles so I could quickly test different models and code architectures.
 
 ## Initial Proposal
 To keep as a reference, here is my initial project proposal from the February 2nd interest statement:
